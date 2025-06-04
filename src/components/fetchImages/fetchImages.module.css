@@ -1,0 +1,59 @@
+.fetch-images-slider {
+  width: 100%;        /* prendre toute la largeur disponible de la card */
+  max-width: 100%;    /* pas dépasser le parent */
+  margin: 0 auto;
+}
+
+.fetch-images-slider img {
+  cursor: zoom-in;
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+  cursor: auto;
+  position: relative;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.fetch-images-slider {
+  padding-bottom: 40px; /* espace sous le slider pour les dots */
+  position: relative;
+}
+

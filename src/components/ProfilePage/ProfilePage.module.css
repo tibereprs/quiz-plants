@@ -1,0 +1,222 @@
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f7fafc; /* fond très clair, style doux */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.dossierTitle {
+  margin-top: 40px;
+}
+
+.dossierList {
+  list-style: none;
+  padding: 0;
+}
+
+.dossierItem {
+  margin-bottom: 15px;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 15px 10px;
+  background-color: #f0f9f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dossierName {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #2a6f97;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.playButton {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%; /* bouton pleine largeur du li */
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+.logoutButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2a6f97;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.folderActions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.smallButton {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.smallButton:hover {
+  background-color: #d0d0d0;
+}
+
+.dangerButton {
+  background-color: #fce4e4;
+  border-color: #f5a5a5;
+  color: #c62828;
+}
+
+.dangerButton:hover {
+  background-color: #f8d0d0;
+}
+
+.playButton {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playButton:hover {
+  background-color: #45a049;
+}
+.addFolderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.addFolderInput {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.addFolderButton {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.addFolderButton:hover {
+  background-color: #45a049;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modalInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modalButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.modalCancelButton {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.errorMessage {
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.successMessage {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.changePasswordBtn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

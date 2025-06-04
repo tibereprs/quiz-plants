@@ -1,0 +1,80 @@
+.button {
+  background-color: transparent;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  position: relative; /* IMPORTANT : pour que la popup soit relative à ce bouton */
+}
+
+.button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+.modal {
+  background: #e6f4ea; /* vert très clair */
+  border-radius: 8px;
+  padding: 20px 30px;
+  max-width: 320px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center; /* CENTRAGE du texte */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTRAGE horizontal des enfants */
+  gap: 12px; /* espace entre éléments */
+}
+
+/* Input dans la popup */
+.modal input[type="text"],
+.modal select {
+  width: 100%;
+  max-width: 280px; /* un max pour pas trop étirer */
+  text-align: center; /* centrer le texte dans input/select */
+}
+
+/* Boutons popup */
+.modalButtons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modalButtons button {
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.modalButtons button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.modalButtons button:first-child:disabled {
+  background-color: #9ccc9c;
+  cursor: not-allowed;
+}
+
+.modalButtons button:last-child {
+  background-color: #eee;
+  color: #444;
+}
+
+.modalButtons button:last-child:hover {
+  background-color: #ddd;
+}
