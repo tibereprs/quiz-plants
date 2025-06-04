@@ -1,0 +1,108 @@
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background: #f0f7f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2a6f97;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  padding: 12px 15px;
+  border: 1.8px solid #a3c4dc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input[type="email"]:focus,
+.auth-form input[type="password"]:focus {
+  border-color: #2a6f97;
+  outline: none;
+}
+
+.auth-form button {
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button[type="submit"] {
+  background-color: #2a6f97;
+  color: white;
+}
+
+.auth-form button[type="submit"]:hover {
+  background-color: #1f4e6f;
+}
+
+.auth-form button[type="button"] {
+  background-color: #f0f7f9;
+  color: #2a6f97;
+  border: 1.8px solid #2a6f97;
+}
+
+.auth-form button[type="button"]:hover {
+  background-color: #2a6f97;
+  color: white;
+}
+
+.auth-error {
+  color: #e63946;
+  font-weight: 600;
+  text-align: center;
+}
+
+.auth-success {
+  color: #2a9d8f;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.google-button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #4285F4;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 3px 6px rgba(66, 133, 244, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+  background-color: #357ae8;
+}
+
+.google-icon {
+  height: 20px;
+  width: 20px;
+}

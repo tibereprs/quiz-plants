@@ -1,0 +1,26 @@
+.back-button {
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #065f46;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+  width: 100%;
+  text-align: left;
+}
+
+/* Effet au survol */
+.back-button:hover {
+  color: #0b8a6f;
+}
+
+/* Responsive ajusté */
+@media (max-width: 600px) {
+  .back-button {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+  }
+}

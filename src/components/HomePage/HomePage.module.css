@@ -1,0 +1,130 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f0fdfa, #ccfbf1);
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.home-container h1,
+.home-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #065f46;
+  text-align: center;
+}
+
+/* Liste de boutons */
+.button-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.button-list li {
+  list-style: none;
+}
+
+.button-list button {
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: #34d399;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  width: 100%;
+  touch-action: manipulation;
+}
+
+.button-list button:hover {
+  background-color: #10b981;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/* ✅ Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .home-container h1,
+  .home-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .button-list {
+    grid-template-columns: 1fr; /* Une colonne sur mobile étroit */
+  }
+
+  .button-list button {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+}
+
+.auth-status {
+  background-color: #e3f2f7;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.auth-status p {
+  margin: 0;
+  font-weight: 500;
+  color: #2a6f97;
+}
+
+.auth-status button,
+.auth-status a {
+  background-color: #2a6f97;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-status button:hover,
+.auth-status a:hover {
+  background-color: #1f4e6f;
+}
+.user-icon-container {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.05);
+  border-color: #2a6f97;
+}
+
