@@ -1,13 +1,10 @@
-// main.tsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import AppRouter from './AppRouter'; // ou App
+import React from "react";
+import ReactDOM from "react-dom/client";
+import AppRouter from "./AppRouter";
+import './style.css';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter> {/* ✅ ICI UNIQUEMENT */}
-      <AppRouter />
-    </BrowserRouter>
+    <AppRouter />
   </React.StrictMode>
 );

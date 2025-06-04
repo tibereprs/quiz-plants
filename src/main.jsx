@@ -1,6 +1,7 @@
 import { useState } from "react";
 import questions from "./data/questions.json";
 import "./App.css";
+import './style.css';
 
 function App() {
   const [current, setCurrent] = useState(0);
