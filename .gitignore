@@ -23,3 +23,37 @@ dist-ssr
 *.sln
 *.sw?
 
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+
+# Capacitor
+android/
+ios/
+*.xcworkspace
+*.xcodeproj
+*.idea/
+*.gradle/
+capacitor.config.json
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environnement
+.env
+.env.local
+.env.production
+
+# firebase
+
+src/firebase/

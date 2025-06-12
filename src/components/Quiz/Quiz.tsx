@@ -220,7 +220,9 @@ const Quiz: React.FC = () => {
           choices: choicesArray,
           answer: isLatin ? data.nom_latin || '' : data.nom_fr || '',
           description: data.description,
-          plantId: data.id
+          plantId: data.id,
+          indiceIdentification: data.indice_identification || '' 
+
         };
       });
 
@@ -329,6 +331,7 @@ const Quiz: React.FC = () => {
         onNext={nextQuestion}
         plantId={plantData.plantId}
         description={plantData.description}
+        indiceIdentification={plantData.indiceIdentification}
       />
       <p>Score: {score} / {plants.length}</p>
     </div>

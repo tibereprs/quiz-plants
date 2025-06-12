@@ -55,5 +55,21 @@
 .fetch-images-slider {
   padding-bottom: 40px; /* espace sous le slider pour les dots */
   position: relative;
+   overflow: visible; 
 }
 
+/* Sélecteurs slick globaux, met-les en global via :global() si tu utilises CSS modules */
+:global(.slick-prev),
+:global(.slick-next) {
+  display: block !important;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+}
+
+:global(.slick-prev:before),
+:global(.slick-next:before) {
+  font-size: 30px;
+  color: black; /* adapte selon ta charte */
+  opacity: 1 !important;
+}

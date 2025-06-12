@@ -233,5 +233,11 @@ button:hover {
   border: 2px solid #4caf50;
   background-color: #e8f5e9;
   border-radius: 8px;
-}
+  }
+  .indiceText {
+  margin-top: 8;
+  font-size: 16;
+  font-style: 'italic';
+  color: '#555';
+  }
 }

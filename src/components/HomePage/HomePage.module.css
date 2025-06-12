@@ -128,3 +128,55 @@
   border-color: #2a6f97;
 }
 
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 480px; /* un peu plus large */
+  margin: 0 auto;
+  padding: 0 1rem; /* petit padding horizontal pour respirer */
+}
+
+@media (min-width: 600px) {
+  .button-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem; /* un peu plus d’espace entre les boutons en desktop */
+  }
+}
+
+.btn-primary {
+  background-color: #34d399;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1 1 140px; /* permet de grandir, rétrécir, min-width 140px */
+  min-width: 140px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #10b981;
+  transform: translateY(-3px);
+}
+
+/* Pour très petits écrans */
+@media (max-width: 400px) {
+  .button-group {
+    padding: 0 0.5rem;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    min-width: unset; /* laisse le bouton prendre toute la largeur */
+    max-width: 100%;
+  }
+}

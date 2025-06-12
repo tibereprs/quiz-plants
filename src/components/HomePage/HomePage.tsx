@@ -55,15 +55,16 @@ const HomePage: React.FC = () => {
         )}
       </div>
 
-      {!mode ? (
-        <>
-          <h1>Bienvenue ! Choisis ton mode de jeu</h1>
-          <div style={{ display: 'flex', gap: '1rem' }}>
-            <button onClick={() => setMode('entrainement')}>🎯 Entraînement</button>
-            <button onClick={() => navigate('/quizseries')}>🏆 Quiz séries</button> {/* 👈 redirection directe */}
-          </div>
-        </>
-      ) : (
+        {!mode ? (
+          <>
+            <h1>Bienvenue ! Choisis ton mode de jeu</h1>
+            <div className={styles['button-group']}>
+              <button onClick={() => setMode('entrainement')} className={styles['btn-primary']}>🎯 Entraînement</button>
+              <button onClick={() => navigate('/quizseries')} className={styles['btn-primary']}>🏆 Quiz séries</button>
+              <button onClick={() => navigate('/plant/')} className={styles['btn-primary']}>🌳 Apprendre les plantes</button>
+            </div>
+          </>
+        ) : (
         !selectedCategory ? (
           <CategorySelector
             categories={categories}

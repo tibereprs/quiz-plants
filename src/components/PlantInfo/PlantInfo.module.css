@@ -1,0 +1,90 @@
+/* PlantInfo.module.css */
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #276749; /* vert foncé */
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #4a5568; /* gris foncé */
+  margin-top: 0.25rem;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #276749;
+  border-bottom: 2px solid #276749;
+  padding-bottom: 0.25rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem 0;
+}
+
+.listItem {
+  margin-bottom: 0.25rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #2f855a;
+}
+
+.value {
+  margin-left: 0.5rem;
+  font-style: normal;
+  color: #4a5568;
+}
+.fetch-images-slider {
+  overflow: visible; /* IMPORTANT */
+  position: relative;
+}
+
+.backButton {
+  background-color: #e6f4ea;
+  border: 2px solid #b2d8b2;
+  color: #2d3a2e;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}

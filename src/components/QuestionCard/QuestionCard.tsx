@@ -15,6 +15,7 @@ type QuestionCardProps = {
   onSelectAnswer: (choice: string) => void;
   onNext: () => void;
   plantId: string;
+  indiceIdentification: string;
 };
 
 const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -28,6 +29,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   onSelectAnswer,
   onNext,
   plantId,
+  indiceIdentification
 }) => {
   const [visible, setVisible] = useState(false);
   const { user } = useAuth();
@@ -39,6 +41,8 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 
 
   useEffect(() => {
+            console.log(indiceIdentification)
+
     setVisible(false);
     const timeout = setTimeout(() => setVisible(true), 10);
     return () => clearTimeout(timeout);
@@ -142,6 +146,9 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
           <div className={styles['description-box']}>
             <h3>Description</h3>
             <p>{description}</p>
+            <p className={styles['indiceText']}>
+      🧠      🧠 Indice d’identification : {indiceIdentification}
+            </p>
           </div>
           <button
             className={`${styles['next-button']} ${visible ? styles.visible : ''}`}
